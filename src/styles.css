@@ -1,1 +1,159 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
+:root {
+  --Background: #f5efe7;
+  --Text: #4d4d4d;
+  --Primary: #c7b299;
+  --primary-200: #a9957d;
+}
+
+body {
+  background: var(--Background, #f5efe7);
+}
+
+h1 {
+  align-self: stretch;
+  color: var(--Text, #4d4d4d);
+
+  /* Heading/H1 */
+  font-family: Roboto;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 67.2px */
+}
+
+h2 {
+  color: var(--Text, #4d4d4d);
+
+  /* Heading/H2 */
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+  color: var(--Text, #4d4d4d);
+
+  /* Heading/H5 */
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 33.6px */
+}
+
+h6 {
+  color: var(--Text, #4d4d4d);
+
+  /* Heading/H6 */
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+}
+
+p {
+  align-self: stretch;
+  color: var(--Text, #4d4d4d);
+
+  /* Text/Medium/Normal */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.p-medium-normal {
+  color: var(--Text, #4d4d4d);
+
+  /* Text/Medium/Normal */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.p-medium-bold {
+  color: var(--Text, #4d4d4d);
+
+  /* Text/Medium/Bold */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+
+.p-regular-normal {
+  color: var(--Text, #4d4d4d);
+
+  /* Text/Regular/Normal */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.p-regular-semi-bold {
+  color: var(--Text, #4d4d4d);
+
+  /* Text/Regular/Semi Bold */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+
+.p-small-normal {
+  color: var(--Text, #4d4d4d);
+
+  /* Text/Small/Normal */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+
+.p-small-semi-bold {
+  color: var(--Text, #4d4d4d);
+
+  /* Text/Small/Semi Bold */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+}
+
+button {
+  /* Text/Regular/Normal */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}

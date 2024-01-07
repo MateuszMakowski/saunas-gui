@@ -1,0 +1,8 @@
+.col-1 {
+  display: flex;
+  padding-right: 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
