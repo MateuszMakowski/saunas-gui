@@ -10,7 +10,7 @@ module.exports = {
         from: {transform: "translateY(0)"},
         to: {transform: "translateY(-100%)"},
       }
-    },
+    }
   },
   plugins: [],
 }

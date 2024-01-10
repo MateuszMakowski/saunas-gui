@@ -1,0 +1,19 @@
+.input {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border: 1px solid #000;
+  background: var(--Background, #f5efe7);
+}
+
+.text-area {
+  display: flex;
+  height: 180px;
+  padding: 12px;
+  align-items: flex-start;
+  align-self: stretch;
+  border: 1px solid var(--Text, #4d4d4d);
+  background: var(--Background, #f5efe7);
+}

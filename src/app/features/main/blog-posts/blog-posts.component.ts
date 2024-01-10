@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ButtonTransparentComponent } from '../../shared/components/button-transparent/button-transparent.component';
+import { ButtonTransparentComponent } from '../../../shared/components/button-transparent/button-transparent.component';
 
 @Component({
   selector: 'app-blog-posts',
