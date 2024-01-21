@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ButtonFullComponent } from '../../../shared/components/button-full/button-full.component';
 import { ButtonTransparentComponent } from '../../../shared/components/button-transparent/button-transparent.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'discover-list',
@@ -9,8 +10,13 @@ import { ButtonTransparentComponent } from '../../../shared/components/button-tr
   templateUrl: './list.component.html',
   styleUrl: './list.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CommonModule, ButtonFullComponent, ButtonTransparentComponent],
+  imports: [
+    CommonModule,
+    ButtonFullComponent,
+    ButtonTransparentComponent,
+    RouterModule,
+  ],
 })
 export class ListComponent {
-  public items = [1, 2, 3];
+  public items = [{ id: '1' }, { id: '2' }, { id: '3' }];
 }

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { NavBarComponent } from '../../shared/components/nav-bar/nav-bar.component';
 import { FooterComponent } from '../../shared/components/footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
@@ -25,4 +25,8 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent,
   ],
 })
-export class DiscoverComponent {}
+export class DiscoverComponent implements OnInit {
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
+}

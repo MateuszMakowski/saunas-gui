@@ -1,0 +1,22 @@
+.time-to-read {
+  align-items: center;
+  display: flex;
+}
+
+.arrow-left {
+  width: fit-content;
+  height: fit-content;
+  padding: 12px;
+  gap: 8px;
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+
+.arrow-right {
+  width: fit-content;
+  height: fit-content;
+  padding: 12px;
+  gap: 8px;
+  border-radius: 50px;
+  border: 1px solid #000;
+}

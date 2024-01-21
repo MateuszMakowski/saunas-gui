@@ -1,0 +1,125 @@
+<div class="container mx-auto grid gap-y-16">
+  <div class="grid gap-y-20">
+    <div class="col-1 flex-1 flex flex-col justify-center gap-y-4">
+      <p class="regular-semi-bold">Artykuły</p>
+      <div class="grid gap-y-6">
+        <h2 class="">Odkryj Świat Saun</h2>
+        <div class="flex-row justify-between">
+          <p class="medium-normal">
+            Bądź na bieżąco z informacjami na temat saun i trendów w dziedzinie
+            wellness.
+          </p>
+          <div>
+            <button-transparent [text]="'Więcej'"></button-transparent>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gap-y-12 grid">
+      <div class="flex-row col-3 gap-x-8">
+        <div class="col-1 flex-1 flex flex-col justify-center gap-y-6">
+          <img class="w-full" src="./../assets/sample.png" />
+          <div class="grid gap-y-4">
+            <div class="flex-row gap-x-4">
+              <p class="p-small-semi-bold hashtag">Sauna</p>
+              <p class="p-small-semi-bold time-to-read">5 min</p>
+            </div>
+            <div class="gap-y-2">
+              <h5>Korzyści z regularnych sesji sauny</h5>
+              <p class="regular-normal">
+                Dowiedz się, dlaczego regularne sesje sauny są korzystne dla
+                twojego zdrowia
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 flex-1 flex flex-col justify-center gap-y-6">
+          <img class="w-full" src="./../assets/sample.png" />
+          <div class="grid gap-y-4">
+            <div class="flex-row gap-x-4">
+              <p class="p-small-semi-bold hashtag">Sauna</p>
+              <p class="p-small-semi-bold time-to-read">5 min</p>
+            </div>
+            <div class="gap-y-2">
+              <h5>Korzyści z regularnych sesji sauny</h5>
+              <p class="regular-normal">
+                Dowiedz się, dlaczego regularne sesje sauny są korzystne dla
+                twojego zdrowia
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 flex-1 flex flex-col justify-center gap-y-6">
+          <img class="w-full" src="./../assets/sample.png" />
+          <div class="grid gap-y-4">
+            <div class="flex-row gap-x-4">
+              <p class="p-small-semi-bold hashtag">Sauna</p>
+              <p class="p-small-semi-bold time-to-read">5 min</p>
+            </div>
+            <div class="gap-y-2">
+              <h5>Korzyści z regularnych sesji sauny</h5>
+              <p class="regular-normal">
+                Dowiedz się, dlaczego regularne sesje sauny są korzystne dla
+                twojego zdrowia
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between items-center">
+        <div class="flex-row gap-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+          >
+            <circle cx="4" cy="4" r="4" fill="#4D4D4D" />
+          </svg>
+          <svg
+            *ngFor="let dot of dots"
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+          >
+            <circle cx="4" cy="4" r="4" fill="#8D8D8D" />
+            <circle cx="4" cy="4" r="4" fill="#D9D9D9" />
+          </svg>
+        </div>
+        <div class="flex-row gap-x-4">
+          <div class="arrow-left self-center justify-self-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M20 10.9998H7.83L13.42 5.40976L12 3.99976L4 11.9998L12 19.9998L13.41 18.5898L7.83 12.9998H20V10.9998Z"
+                fill="#4D4D4D"
+              />
+            </svg>
+          </div>
+          <div class="arrow-right self-center justify-self-end">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12 3.99976L10.59 5.40976L16.17 10.9998H4V12.9998H16.17L10.59 18.5898L12 19.9998L20 11.9998L12 3.99976Z"
+                fill="#4D4D4D"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

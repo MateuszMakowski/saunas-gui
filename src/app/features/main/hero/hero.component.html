@@ -2,10 +2,10 @@
   <div class="flex flex-row h-screen">
     <div class="col-1 flex-1 flex flex-col justify-center">
       <h1>Odkrywaj Sauny i<br />Ekskluzywne Oferty</h1>
-      <p class="p-medium-normal">
+      <p class="medium-normal">
         Znajdź najlepsze sauny w pobliżu i skorzystaj z ekskluzywnych ofert.
       </p>
-      <button-full [text]="'Odkrywaj'"></button-full>
+      <button-full [routerLink]="'/odkrywaj'" [text]="'Odkrywaj'"></button-full>
     </div>
     <div class="flex-1 overflow-hidden group">
       <div
@@ -19,7 +19,7 @@
         <img class="w-full aspect-square" src="./../assets/6.jpg" />
       </div>
       <div
-        class="vertical-gallery grid grid-cols-2 gap-4 animate-loop-scroll group-hover:paused"
+        class="grid grid-cols-2 gap-4 animate-loop-scroll group-hover:paused"
       >
         <img class="w-full aspect-square" src="./../assets/1.jpg" />
         <img class="w-full aspect-square" src="./../assets/2.jpg" />

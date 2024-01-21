@@ -1,0 +1,23 @@
+.arrow-left {
+  width: fit-content;
+  height: fit-content;
+  padding: 12px;
+  gap: 8px;
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+
+.arrow-right {
+  width: fit-content;
+  height: fit-content;
+  padding: 12px;
+  gap: 8px;
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+
+.avatar-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+}
