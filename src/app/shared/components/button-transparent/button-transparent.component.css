@@ -8,3 +8,13 @@ button {
   border: 1px solid var(--Primary, #c7b299);
   color: var(--primary-200, #a9957d);
 }
+
+button:hover {
+  background: var(--hover, #a07e55);
+  color: var(--Background, #f5efe7);
+}
+
+button:active {
+  background: var(--active, #71523d);
+  color: var(--Background, #f5efe7);
+}

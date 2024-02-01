@@ -1,11 +1,18 @@
-import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Inject,
+  OnInit,
+  PLATFORM_ID,
+} from '@angular/core';
 import { ButtonTransparentComponent } from '../../shared/components/button-transparent/button-transparent.component';
 import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
 import { ButtonFullComponent } from '../../shared/components/button-full/button-full.component';
 import { BlogComponent } from './blog/blog.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-details',
@@ -21,11 +28,16 @@ import { BlogComponent } from './blog/blog.component';
     ContactComponent,
     ButtonFullComponent,
     BlogComponent,
+    RouterModule,
   ],
 })
 export class DetailsComponent implements OnInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   ngOnInit(): void {
-    window.scrollTo(0, 0);
+    if (isPlatformBrowser(this.platformId)) {
+      window.scrollTo(0, 0);
+    }
   }
 
   stars = Array(5);

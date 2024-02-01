@@ -6,6 +6,7 @@ import { AddSpotComponent } from './features/add-spot/add-spot.component';
 import { LoginComponent } from './features/login/login.component';
 import { SignupComponent } from './features/signup/signup.component';
 import { BlogPostComponent } from './features/blog-post/blog-post.component';
+import { AccountComponent } from './features/account/account.component';
 
 export const routes: Routes = [
   { path: '', component: MainComponent, title: 'Główna' },
@@ -15,5 +16,6 @@ export const routes: Routes = [
   { path: 'logowanie', component: LoginComponent, title: 'Logowanie' },
   { path: 'rejestracja', component: SignupComponent, title: 'Rejestracja' },
   { path: 'blog', component: BlogPostComponent, title: 'Blog' },
+  { path: 'konto', component: AccountComponent, title: 'Konto' },
   { path: '**', redirectTo: '' },
 ];

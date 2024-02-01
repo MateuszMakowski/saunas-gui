@@ -1,5 +1,11 @@
-import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Inject,
+  OnInit,
+  PLATFORM_ID,
+} from '@angular/core';
 import { ButtonFullComponent } from '../../shared/components/button-full/button-full.component';
 import { ButtonTransparentComponent } from '../../shared/components/button-transparent/button-transparent.component';
 import { FaqComponent } from './faq/faq.component';
@@ -20,7 +26,11 @@ import { ProcessComponent } from './process/process.component';
   ],
 })
 export class AddSpotComponent implements OnInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   ngOnInit(): void {
-    window.scrollTo(0, 0);
+    if (isPlatformBrowser(this.platformId)) {
+      window.scrollTo(0, 0);
+    }
   }
 }

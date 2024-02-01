@@ -9,59 +9,43 @@
     </div>
   </div>
   <div>
-    <div *ngFor="let item of items">
+    <div *ngFor="let item of displayedItems">
       <hr class="border-black" />
       <div class="py-11 flex-row flex gap-x-20">
         <div class="flex-1 justify-center">
-          <img class="w-full" src="./../assets/sample.png" />
+          <img class="w-full" [src]="item.imageUrl" />
         </div>
         <div class="col-1 flex-1 flex flex-col justify-center gap-y-2">
-          <h4>Project name here</h4>
-          <div class="gap-y-4 grid">
-            <p class="regular-normal">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique.
+          <h4>{{ item.projectName }}</h4>
+
+          <p class="regular-normal">Lokalizacja: {{ item.location }}</p>
+
+          <p class="regular-normal pt-16">
+            {{ item.description }}
+          </p>
+          <div class="flex-row gap-x-2">
+            <p class="p-small-semi-bold hashtag" *ngFor="let tag of item.tags">
+              {{ tag }}
             </p>
-            <div class="gap-y-8 grid">
-              <div class="flex-row gap-x-2">
-                <p class="p-small-semi-bold hashtag">Tag one</p>
-                <p class="p-small-semi-bold hashtag">Tag two</p>
-                <p class="p-small-semi-bold hashtag">Tag three</p>
-              </div>
-              <div class="justify-start">
-                <button
-                  class="border-none"
-                  [routerLink]="['/details', item.id]"
-                >
-                  Zobacz
-                </button>
-              </div>
-            </div>
           </div>
+          <!-- <p class="regular-normal" *ngIf="item.specialOffers">
+            Oferty: {{ item.specialOffers }}
+          </p> -->
+          <div class="justify-start pt-12">
+            <button [routerLink]="['/details', item.id]">Zobacz</button>
+          </div>
+          <!-- <p class="regular-normal" *ngIf="item.bookingInfo">
+            Rezerwacja: {{ item.bookingInfo }}
+          </p> -->
+          <!-- <div *ngIf="item.logoUrl">
+            <img [src]="item.logoUrl" class="logo-size" />
+          </div> -->
         </div>
       </div>
     </div>
+
     <div class="justify-center grid pt-16">
-      <button-transparent [text]="'Więcej'"></button-transparent>
+      <button (click)="loadMoreItems()">Więcej</button>
     </div>
   </div>
 </div>
-
-<!-- <div class="container mx-auto py-28">
-  <div class="flex flex-row gap-x-20">
-    <div class="col-1 flex-1 flex flex-col justify-center gap-y-6">
-      <h2>Odkryj Sauny w Twojej Okolicy</h2>
-      <p class="medium-normal">
-        Odpocznij i zregeneruj się w saunach w Twojej okolicy. Zapisz się już
-        teraz!
-      </p>
-      <div class="flex-row gap-x-4">
-        <button-full [text]="'Zarejestruj się'"></button-full>
-        <button-transparent [text]="'Więcej'"></button-transparent>
-      </div>
-    </div>
-    <div class="flex-1 justify-center">
-      <img class="w-full" src="./../assets/sekcja-3.jpg" />
-    </div>
-  </div>
-</div> -->

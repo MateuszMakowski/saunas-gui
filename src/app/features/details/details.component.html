@@ -9,9 +9,9 @@
       otoczeniu.
     </p>
     <div class="flex-row gap-x-2 justify-center">
-      <p class="p-small-semi-bold hashtag">Tag one</p>
-      <p class="p-small-semi-bold hashtag">Tag two</p>
-      <p class="p-small-semi-bold hashtag">Tag three</p>
+      <p class="p-small-semi-bold hashtag self-center">Tag one</p>
+      <p class="p-small-semi-bold hashtag self-center">Tag two</p>
+      <p class="p-small-semi-bold hashtag self-center">Tag three</p>
     </div>
   </div>
 </div>
@@ -76,9 +76,28 @@
         promocjach.
       </p>
       <div class="flex-row gap-x-4 pt-4">
-        <button-full [text]="'Book'"></button-full>
-        <button-transparent [text]="'Favourites'"></button-transparent>
+        <button-full [text]="'Sprawdź jak dojechać'"></button-full>
+        <button-transparent
+          routerLink="/rejestracja"
+          [text]="'Dodaj do ulubionych'"
+        ></button-transparent>
       </div>
     </div>
+  </div>
+</div>
+<div class="background-img">
+  <div class="container py-28 items-center">
+    <h2>Bądź na bieżąco z Sauna News</h2>
+    <p class="medium-normal pt-6 pb-4">
+      Subskrybuj nasz biuletyn, aby uzyskać najnowsze aktualizacje i oferty
+      specjalne.
+    </p>
+    <div class="flex-row gap-x-4 pt-4">
+      <input type="text" class="input w-1/4" placeholder="Wpisz swój Email" />
+      <button-full [text]="'Zapisz się'"></button-full>
+    </div>
+    <p class="tiny-normal pt-4">
+      Rejestrując się, zgadzasz się na nasze warunki.
+    </p>
   </div>
 </div>

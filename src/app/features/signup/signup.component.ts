@@ -1,5 +1,11 @@
-import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Inject,
+  OnInit,
+  PLATFORM_ID,
+} from '@angular/core';
 import { ButtonFullComponent } from '../../shared/components/button-full/button-full.component';
 
 @Component({
@@ -10,4 +16,12 @@ import { ButtonFullComponent } from '../../shared/components/button-full/button-
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, ButtonFullComponent],
 })
-export class SignupComponent {}
+export class SignupComponent implements OnInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      window.scrollTo(0, 0);
+    }
+  }
+}

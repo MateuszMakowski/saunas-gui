@@ -1,0 +1,7 @@
+.input {
+  border-radius: 4px;
+}
+
+#messageTextarea {
+  min-height: 11rem;
+}

@@ -10,15 +10,30 @@
   <div class="col-1 flex-1 flex flex-col justify-center items-center gap-y-6">
     <div class="w-1/2 gap-y-2 grid">
       <p class="regular-normal">Imię i nazwisko</p>
-      <p class="input">Imię i nazwisko</p>
+      <input
+        type="text"
+        id="fullNameInput"
+        class="input"
+        placeholder="Wpisz swoje imię i nazwisko"
+      />
     </div>
     <div class="w-1/2 gap-y-2 grid">
       <p class="regular-normal">E-mail</p>
-      <p class="input">Adres E-mail</p>
+      <input
+        type="email"
+        id="emailInput"
+        class="input"
+        placeholder="Wpisz swój email"
+      />
     </div>
     <div class="w-1/2 gap-y-2 grid">
       <p class="regular-normal">Hasło</p>
-      <p class="input">********</p>
+      <input
+        type="password"
+        id="passwordInput"
+        class="input"
+        placeholder="Wpisz hasło"
+      />
     </div>
     <button-full [text]="'Utwórz konto'"></button-full>
     <div class="flex-row gap-x-2 w-1/2 justify-center items-center">

@@ -3,20 +3,22 @@
   display: flex;
 }
 
-.arrow-left {
-  width: fit-content;
-  height: fit-content;
-  padding: 12px;
-  gap: 8px;
-  border-radius: 50px;
-  border: 1px solid #000;
-}
-
+.arrow-left,
 .arrow-right {
   width: fit-content;
   height: fit-content;
   padding: 12px;
   gap: 8px;
   border-radius: 50px;
-  border: 1px solid #000;
+  border: 1px solid #a9957d;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background: #c7b299;
+}
+
+.arrow-left:active,
+.arrow-right:active {
+  background: #a9957d;
 }

@@ -13,31 +13,25 @@
     --Text: #4d4d4d;
     --Primary: #c7b299;
     --primary-200: #a9957d;
+    --hover: #a07e55;
+    --active: #71523d;
   }
 
   body {
     background: var(--Background, #f5efe7);
+    font-family: Roboto;
+    color: var(--Text, #4d4d4d);
+    font-style: normal;
   }
 
   h1 {
-    align-self: stretch;
-    color: var(--Text, #4d4d4d);
-
-    /* Heading/H1 */
-    font-family: Roboto;
-    font-size: 46px;
-    font-style: normal;
+    font-size: 56px;
     font-weight: 700;
     line-height: 120%; /* 67.2px */
   }
 
   h2 {
-    color: var(--Text, #4d4d4d);
-
-    /* Heading/H2 */
-    font-family: Roboto;
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 57.6px */
   }
@@ -46,135 +40,95 @@
   }
 
   h4 {
-    color: var(--Text, #4d4d4d);
-
-    /* Heading/H4 */
-    font-family: Roboto;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
     line-height: 130%; /* 41.6px */
   }
 
   h5 {
-    color: var(--Text, #4d4d4d);
-
-    /* Heading/H5 */
-    font-family: Roboto;
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 33.6px */
   }
 
   h6 {
-    color: var(--Text, #4d4d4d);
-
-    /* Heading/H6 */
-    font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 28px */
   }
 
   p {
     align-self: stretch;
-    color: var(--Text, #4d4d4d);
 
     /* Text/Medium/Normal */
-    font-family: Roboto;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 27px */
   }
 
   .medium-normal {
-    color: var(--Text, #4d4d4d);
-
     /* Text/Medium/Normal */
-    font-family: Roboto;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 27px */
   }
 
   .medium-bold {
-    color: var(--Text, #4d4d4d);
-
     /* Text/Medium/Bold */
-    font-family: Roboto;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 27px */
   }
 
   .regular-normal {
-    color: var(--Text, #4d4d4d);
-
     /* Text/Regular/Normal */
-    font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
   }
 
   .regular-link {
-    color: var(--Text, #4d4d4d);
-
     /* Text/Regular/Link */
-    font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
-    text-decoration-line: underline;
   }
 
   .regular-semi-bold {
-    color: var(--Text, #4d4d4d);
-
     /* Text/Regular/Semi Bold */
-    font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 24px */
   }
 
   .small-normal {
-    color: var(--Text, #4d4d4d);
-
     /* Text/Small/Normal */
-    font-family: Roboto;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 21px */
   }
 
   .small-semi-bold {
-    color: var(--Text, #4d4d4d);
-
     /* Text/Small/Semi Bold */
-    font-family: Roboto;
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 21px */
   }
 
+  .tiny-normal {
+    /* Text/Tiny/Normal */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+  }
+
   button {
     /* Text/Regular/Normal */
-    font-family: Roboto;
+    padding: 12px 24px;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
+    border-radius: 3px;
   }
 
   .hashtag {
@@ -202,5 +156,16 @@
     align-self: stretch;
     border: 1px solid var(--Text, #4d4d4d);
     background: var(--Background, #f5efe7);
+  }
+
+  button:hover {
+    background: var(--hover, #a07e55);
+    color: var(--Background, #f5efe7) !important;
+    transition: 0.12s cubic-bezier(0.2, 0, 0.4, 0.8);
+  }
+
+  button:active {
+    background: var(--active, #71523d);
+    color: var(--Background, #f5efe7) !important;
   }
 }

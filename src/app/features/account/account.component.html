@@ -1,0 +1,120 @@
+<div class="container py-28">
+  <p class="regular-semi-bold mb-4">Odkryć</p>
+  <h1>Zarządzaj swoimi ulubionymi</h1>
+  <p class="medium-normal my-6">
+    Zobacz i zarządzaj zapisanymi miejscami w saunie w jednym wygodnym miejscu.
+  </p>
+  <div>
+    <button-full [text]="'Explore'"></button-full>
+  </div>
+</div>
+
+<div class="container py-28">
+  <div class="text-center mb-20">
+    <p class="regular-semi-bold mb-4">Odkryć</p>
+    <h2>Zarządzaj swoimi ulubionymi</h2>
+    <p class="medium-normal my-6">
+      Zobacz i zarządzaj zapisanymi miejscami w saunie w jednym wygodnym
+      miejscu.
+    </p>
+  </div>
+  <div class="grid grid-cols-3 gap-x-8 gap-y-16">
+    <div *ngFor="let item of displayedItems">
+      <img class="w-full" [src]="item.imageUrl" />
+      <div class="flex grid pt-6">
+        <h5>{{ item.projectName }}</h5>
+        <div class="flex-row gap-x-2">
+          <svg
+            class="location-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="{1.5}"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+            />
+          </svg>
+          <p class="regular-normal">
+            {{ item.location }}
+          </p>
+        </div>
+
+        <p class="regular-normal pt-6">
+          {{ item.description }}
+        </p>
+        <div class="flex-row justify-between">
+          <div class="flex-row gap-x-2 py-2">
+            <p class="p-small-semi-bold hashtag" *ngFor="let tag of item.tags">
+              {{ tag }}
+            </p>
+          </div>
+          <button class="border-none" [routerLink]="['/details', item.id]">
+            Zobacz
+          </button>
+        </div>
+        <!-- <p class="regular-normal" *ngIf="item.specialOffers">
+              Oferty: {{ item.specialOffers }}
+            </p> -->
+
+        <!-- <p class="regular-normal" *ngIf="item.bookingInfo">
+              Rezerwacja: {{ item.bookingInfo }}
+            </p> -->
+        <!-- <div *ngIf="item.logoUrl">
+              <img [src]="item.logoUrl" class="logo-size" />
+            </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="justify-center grid pt-16">
+    <button (click)="loadMoreItems()">Więcej</button>
+  </div>
+</div>
+
+<account-faq></account-faq>
+
+<div class="container py-28 gap-x-20 flex-row col-2 items-center">
+  <div class="w-1/2">
+    <h2>Uzyskaj wczesny dostęp do ofert specjalnych</h2>
+    <p class="medium-normal pt-6 pb-4">
+      Dołącz do naszego biuletynu, aby otrzymać ekskluzywne zaproszenia i
+      aktualizacje na saunie wydarzenia.
+    </p>
+    <div class="flex-row gap-x-4 pt-4">
+      <input type="text" class="input w-3/5" placeholder="Wpisz swój Email" />
+      <button-full [text]="'Zapisz się'"></button-full>
+    </div>
+    <p class="tiny-normal pt-4">
+      Rejestrując się, zgadzasz się na nasze warunki.
+    </p>
+  </div>
+  <div class="w-1/2">
+    <img class="w-full" [src]="'./../assets/sample.png'" />
+  </div>
+</div>
+
+<div class="container mx-auto justify-center py-28">
+  <div class="flex-row col-2 gap-x-20">
+    <div class="col-1 flex-1 flex flex-col">
+      <h2>Odkryj najlepsze sauny</h2>
+    </div>
+    <div class="flex-1 grid gap-y-6">
+      <p class="medium-normal">
+        Przeglądaj więcej miejsc w saunie lub podziel się swoimi ulubionymi
+        znajomym.
+      </p>
+      <div class="flex-row gap-x-4 pt-4">
+        <button-full routerLink="/odkrywaj" [text]="'Odkrywaj'"></button-full>
+        <button-transparent [text]="'Udostępnij'"></button-transparent>
+      </div>
+    </div>
+  </div>
+</div>

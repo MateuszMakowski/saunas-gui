@@ -31,18 +31,32 @@
   <div class="col-1 flex-1 flex flex-col justify-center items-center gap-y-6">
     <div class="w-1/2 gap-y-2 grid">
       <p class="regular-normal">Nazwa</p>
-      <p class="input">Imię i Nazwisko</p>
+      <input
+        type="text"
+        id="fullNameInput"
+        class="input"
+        placeholder="Wpisz swoje imię i nazwisko"
+      />
     </div>
     <div class="w-1/2 gap-y-2 grid">
       <p class="regular-normal">E-mail</p>
-      <p class="input">Adres E-mail</p>
+      <input
+        type="email"
+        id="emailInput"
+        class="input"
+        placeholder="Wpisz swój email"
+      />
     </div>
     <div class="w-1/2 gap-y-2 grid">
       <p class="regular-normal">Wiadomość</p>
-      <p class="text-area">Wpisz swoją wiadomość...</p>
+      <textarea
+        class="input"
+        id="messageTextarea"
+        placeholder="Wpisz swoją wiadomość..."
+      ></textarea>
     </div>
 
-    <button-full [text]="'Button'"></button-full>
+    <button-full [text]="'Wyślij'"></button-full>
   </div>
 </div>
 <add-spot-process></add-spot-process>

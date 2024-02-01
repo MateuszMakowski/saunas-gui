@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ButtonTransparentComponent } from '../../../shared/components/button-transparent/button-transparent.component';
 
 @Component({
-  selector: 'details-faq',
+  selector: 'account-faq',
   standalone: true,
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.css',
@@ -11,32 +11,30 @@ import { ButtonTransparentComponent } from '../../../shared/components/button-tr
   imports: [CommonModule, ButtonTransparentComponent],
 })
 export class FaqComponent {
-  isExpanded = false;
-
   items = [
     {
-      title: ' Jakie są wymagania dotyczące rezerwacji?',
+      title: 'Jak dodać swój obiekt?',
       content:
         'Tutaj wpisz tekst, który ma się pojawić po naciśnięciu strzałki.',
       isExpanded: false,
     },
     {
-      title: 'Jaka jest polityka anulowania?',
+      title: 'Jakie są wymagania?',
       content: 'Treść dla tego pytania.',
       isExpanded: false,
     },
     {
-      title: 'Czy podano ręczniki?',
+      title: 'Ile to kosztuje?',
       content: 'Treść dla tego pytania.',
       isExpanded: false,
     },
     {
-      title: 'Czy istnieje minimalny wymóg wiekowy?',
+      title: 'Jak mogę edytować swoją listę?',
       content: 'Treść dla tego pytania.',
       isExpanded: false,
     },
     {
-      title: ' Czy mogę przynieść własne jedzenie?',
+      title: 'Czy użytkownicy mogą zapisać moją saunę?',
       content: 'Treść dla tego pytania.',
       isExpanded: false,
     },
