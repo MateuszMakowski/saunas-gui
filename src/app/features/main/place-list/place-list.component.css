@@ -1,0 +1,61 @@
+.section {
+  position: relative;
+  width: 100%; /* Dostosuj szerokość sekcji */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/background-picture.jpg"); /* Ścieżka do tła */
+  background-size: cover;
+  /* background-position: center; */
+  background-attachment: fixed; /* Sprawia, że tło jest statyczne */
+  filter: blur(50px);
+}
+
+img {
+  border-radius: 10%;
+  filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.25));
+}
+
+.line {
+  position: relative;
+  width: 1px; /* Ustaw szerokość linii */
+  background-color: #ffffff; /* Kolor tła linii, biały w tym przypadku */
+  margin-right: 20px; /* Odstęp od tekstu */
+}
+
+button {
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.actions {
+  /* border: ; */
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: 1px solid white;
+  border-radius: 0 50px 50px 0;
+  background: rgba(176, 165, 165, 0.19);
+  backdrop-filter: blur(2px);
+}
+
+.properties p {
+  border: 1px solid white;
+  border-radius: 50px;
+  background: rgba(176, 165, 165, 0.19);
+  backdrop-filter: blur(2px);
+}
+
+.load-more-btn {
+  background: rgba(176, 165, 165, 0.19);
+  transition: background 0.2s ease;
+}
+
+.load-more-btn:hover {
+  background: rgba(228, 228, 228, 0.19);
+}

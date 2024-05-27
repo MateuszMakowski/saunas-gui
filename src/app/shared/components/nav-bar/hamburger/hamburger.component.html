@@ -1,0 +1,76 @@
+<div
+  [ngClass]="{ 'no-scroll': checked }"
+  (wheel)="preventScroll($event)"
+  (touchmove)="preventTouchScroll($event)"
+>
+  <div class="menu-icon">
+    <input
+      class="menu-icon__checkbox"
+      type="checkbox"
+      [ngModel]="checked"
+      (click)="showOrHideMenu()"
+    />
+    <div>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<div class="menu-items" *ngIf="checked" [class.open]="isOpen">
+  <div class="list-items" [class.open]="isOpen">
+    <!-- <a class="regular-normal" routerLink="/odkrywaj" (click)="showOrHideMenu()"
+      >Odkrywaj Sauny</a
+    > -->
+    <a
+      class="regular-normal"
+      routerLink="/dodaj-obiekt"
+      (click)="showOrHideMenu()"
+      >Udostępnij Obiekt</a
+    >
+    <div class="flex justify-center">
+      <span class="login-btn bg-white rounded-3xl login-btn-bg">
+        <!-- <span
+            
+            class="bg-black flex items-center justify-center px-10 py-1 rounded-3xl login-btn text-white"
+            >Konto</span
+          > -->
+        <div>
+          <button
+            *ngIf="!(isLoggedIn$ | async)"
+            routerLink="/logowanie"
+            class="bg-black flex items-center justify-center px-8 py-1 rounded-3xl login-btn text-white whitespace-nowrap"
+            (click)="showOrHideMenu()"
+          >
+            Zaloguj Się
+          </button>
+          <div *ngIf="isLoggedIn$ | async">
+            <button
+              routerLink="/konto"
+              class="bg-black flex items-center justify-center px-8 py-1 rounded-3xl login-btn text-white whitespace-nowrap"
+              (click)="showOrHideMenu()"
+            >
+              Konto
+            </button>
+            <button
+              (click)="logout()"
+              class="bg-black flex items-center justify-center px-8 py-1 rounded-3xl login-btn text-white whitespace-nowrap"
+              (click)="showOrHideMenu()"
+            >
+              Wyloguj
+            </button>
+          </div>
+        </div>
+      </span>
+    </div>
+    <!-- <div>
+              <button *ngIf="!(isLoggedIn$ | async)" routerLink="/logowanie">
+                Zaloguj Się
+              </button>
+              <div *ngIf="isLoggedIn$ | async">
+                <button routerLink="/konto">Konto</button>
+                <button (click)="logout()">Wyloguj</button>
+              </div>
+            </div> -->
+  </div>
+</div>

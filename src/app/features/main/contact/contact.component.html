@@ -1,0 +1,97 @@
+<div class="px-4 sm:px-0" *ngIf="visibilityService.visible$ | async">
+  <div
+    class="section mx-auto w-full sm:w-11/12 lg:w-3/4 xl:w-2/3 justify-center"
+  >
+    <div class="background-blur"></div>
+    <div class="form-content text-white">
+      <div class="flex flex-col sm:flex-row">
+        <div
+          #lewa
+          class="py-6 sm:py-10 grid gap-y-6 w-full sm:w-2/3 px-4 sm:px-4 md:px-8 lg:px-12 xl:px-20"
+        >
+          <div class="gap-y-3 grid">
+            <p class="text-sm opacity-80">Kontakt</p>
+            <p class="text-2xl sm:text-3xl font-bold">
+              Masz sugestie lub pytania?
+            </p>
+            <p class="text-xs sm:text-base opacity-80">
+              Twoja opinia jest dla nas bardzo ważna. Jeśli masz jakiekolwiek
+              pytania, sugestie, lub chciałbyś nawiązać współpracę, nie wahaj
+              się do nas napisać. Skorzystaj z poniższego formularza
+              kontaktowego lub napisz bezpośrednio na adres
+              kontakt&#64;gdzienasauny.pl. Odpowiemy tak szybko, jak to możliwe!
+            </p>
+          </div>
+          <div class="gap-y-4 grid">
+            <div class="w-full gap-y-2 grid">
+              <input
+                type="text"
+                id="fullNameInput"
+                class="input"
+                placeholder="Imię i Nazwisko"
+              />
+            </div>
+            <div class="w-full gap-y-2 grid">
+              <input
+                type="email"
+                id="emailInput"
+                class="input"
+                placeholder="Adres E-mail"
+              />
+            </div>
+            <div class="w-full gap-y-2 grid">
+              <textarea
+                class="input"
+                id="messageTextarea"
+                placeholder="Treść..."
+              ></textarea>
+            </div>
+            <div class="ml-6">
+              <p class="text-xs">Akceptuję regulamin</p>
+            </div>
+          </div>
+
+          <div class="flex justify-center sm:justify-end">
+            <button
+              class="send-btn flex px-4 py-3 rounded-3xl login-btn text-white whitespace-nowrap text-xs"
+            >
+              Wyślij
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="py-10 px-4 sm:px-4 md:px-8 xl:px-10 w-full sm:w-1/3 prawa items-center flex justify-center min-w-56"
+        >
+          <div>
+            <button
+              class="absolute top-2 right-4 opacity-80"
+              (click)="visibilityService.hide()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 close"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <p class="text-2xl sm:text-3xl">
+              <span class="opacity-80">Z niecierpliwością czekamy na</span>
+              Twoją
+              <span class="opacity-80">wiadomość</span>
+            </p>
+            <p class="text-sm pt-2">~ zespół gdzienasauny.pl</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

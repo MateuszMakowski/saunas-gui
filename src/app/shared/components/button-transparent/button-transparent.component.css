@@ -1,4 +1,4 @@
-button {
+/* button {
   display: flex;
   width: fit-content;
   padding: 12px 24px;
@@ -11,10 +11,10 @@ button {
 
 button:hover {
   background: var(--hover, #a07e55);
-  color: var(--Background, #f5efe7);
+  color: var(--Background);
 }
 
 button:active {
   background: var(--active, #71523d);
-  color: var(--Background, #f5efe7);
-}
+  color: var(--Background);
+} */

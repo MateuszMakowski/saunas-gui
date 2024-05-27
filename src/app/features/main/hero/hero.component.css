@@ -1,4 +1,4 @@
-.col-1 {
+/* .col-1 {
   display: flex;
   padding-right: 80px;
   flex-direction: column;
@@ -6,3 +6,68 @@
   gap: 24px;
   align-self: stretch;
 }
+
+img {
+  mix-blend-mode: darken;
+}
+
+#spiral {
+  position: absolute;
+  margin-left: -5em;
+}
+#waves {
+  position: absolute;
+  margin-left: -15em;
+  margin-top: 35em;
+}
+
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.images-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+} */
+
+.section {
+  position: relative;
+  width: 100%; /* Dostosuj szerokość sekcji */
+  height: 600px; /* Dostosuj wysokość sekcji */
+  background-image: url("/assets/background-picture.jpg"); /* Ścieżka do tła */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Sprawia, że tło jest statyczne */
+  mix-blend-mode: normal;
+  filter: blur(50px);
+  overflow: hidden; /* Zapobiega wyciekowi zawartości */
+}
+
+.hotels-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll; /* Umożliwia przewijanie */
+  
+  padding: 20px; /* Dostosuj padding */
+}
+
+.hotel {
+  margin-bottom: 10px; /* Dostosuj margines między hotelami */
+  background-color: white; /* Tło dla pojedynczego hotelu */
+  padding: 10px; /* Dostosuj padding */
+  border: 1px solid #ccc; /* Ramka dookoła hotelu */
+}
+
+

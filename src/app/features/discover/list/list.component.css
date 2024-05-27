@@ -1,0 +1,35 @@
+.selected {
+  border: 1px solid;
+}
+
+.input {
+  border-radius: 4px;
+}
+
+.input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.magnifier,
+.remove {
+  color: var(--primary);
+  width: 20px;
+  height: 20px;
+}
+
+.search-bar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.search-input {
+  border: none;
+  width: 24vw;
+}
+
+.hashtag {
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 4px;
+}

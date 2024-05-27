@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     animation: {
-      "loop-scroll": "loop-scroll 50s linear infinite",
+      "loop-scroll": "loop-scroll 5s linear infinite",
     },
     keyframes: {
       "loop-scroll": {
@@ -13,6 +13,7 @@ module.exports = {
     },
     container: {
       center: true,
+      padding: '1rem'
     },
   },
   plugins: [],

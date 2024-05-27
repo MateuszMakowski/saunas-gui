@@ -7,7 +7,7 @@ button {
   gap: 8px;
   border: 1px solid var(--primary-200, #a9957d);
   background: var(--Primary, #c7b299);
-  color: var(--Background, #f5efe7);
+  color: var(--Background);
 }
 
 button:hover {
@@ -16,4 +16,10 @@ button:hover {
 
 button:active {
   background: var(--active, #71523d);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  border: none;
 }

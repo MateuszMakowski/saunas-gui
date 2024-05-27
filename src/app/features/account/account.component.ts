@@ -5,22 +5,30 @@ import { ButtonFullComponent } from '../../shared/components/button-full/button-
 import { ObiektMiniaturka } from '../../shared/spot-preview.model';
 import { RouterModule } from '@angular/router';
 import { FaqComponent } from './faq/faq.component';
+import { AuthService } from '../../core/services/auth.service';
+import { UploadComponent } from "../../shared/components/upload/upload.component";
 
 @Component({
-  selector: 'app-account',
-  standalone: true,
-  templateUrl: './account.component.html',
-  styleUrl: './account.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [
-    CommonModule,
-    ButtonTransparentComponent,
-    ButtonFullComponent,
-    RouterModule,
-    FaqComponent,
-  ],
+    selector: 'app-account',
+    standalone: true,
+    templateUrl: './account.component.html',
+    styleUrl: './account.component.css',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [
+        CommonModule,
+        ButtonTransparentComponent,
+        ButtonFullComponent,
+        RouterModule,
+        FaqComponent,
+        UploadComponent
+    ]
 })
 export class AccountComponent {
+  public userRole = '';
+  constructor(private authService: AuthService) {
+    this.userRole = this.authService.getUserRole();
+    this.loadMoreItems();
+  }
   items: ObiektMiniaturka[] = [
     {
       id: '1',
@@ -98,9 +106,6 @@ export class AccountComponent {
 
   displayedItems: ObiektMiniaturka[] = [];
   itemsToShow = 3;
-  constructor() {
-    this.loadMoreItems();
-  }
 
   loadMoreItems(): void {
     this.displayedItems = this.items.slice(0, this.itemsToShow);

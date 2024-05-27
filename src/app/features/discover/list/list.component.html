@@ -1,13 +1,98 @@
 <div class="container mx-auto py-28 gap-y-20 grid">
-  <div class="gap-y-4 grid">
-    <p class="regular-semi-bold">Obiekty</p>
-    <div class="gap-y-6 grid">
-      <h2>Tu będzie filtrowanie</h2>
-      <p class="medium-normal">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
+  <div class="gap-y-8 grid">
+    <div class="text-center pb-12">
+      <h3>Odkrywaj najlepsze sauny w swojej okolicy</h3>
+    </div>
+
+    <div class="flex-row justify-between">
+      <div class="flex gap-x-4">
+        <button class="filter-button selected">Wszystkie rodzaje</button>
+        <button class="filter-button">Sauna Sucha (Fińska)</button>
+        <button class="filter-button">Sauna Mokra</button>
+        <button class="filter-button">Sauna Parowa</button>
+        <button class="filter-button">Sauna infrared</button>
+      </div>
+      <div class="flex-row gap-x-2 self-center">
+        <p class="regular-normal self-center">Sortuj</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M16.5303 20.8839C16.2374 21.1768 15.7626 21.1768 15.4697 20.8839L7.82318 13.2374C7.53029 12.9445 7.53029 12.4697 7.82318 12.1768L8.17674 11.8232C8.46963 11.5303 8.9445 11.5303 9.2374 11.8232L16 18.5858L22.7626 11.8232C23.0555 11.5303 23.5303 11.5303 23.8232 11.8232L24.1768 12.1768C24.4697 12.4697 24.4697 12.9445 24.1768 13.2374L16.5303 20.8839Z"
+            fill="#4D4D4D"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="flex-row gap-x-8">
+      <div class="gap-y-2 grid w-1/3">
+        <div class="justify-between flex">
+          <p class="regular-normal">Miasto</p>
+          <p class="regular-normal">Wyczyść</p>
+        </div>
+        <div class="input search-bar">
+          <div class="flex-row">
+            <svg class="magnifier self-center" fill="#4d4d4d">
+              <path
+                d="M16.72 17.78a.75.75 0 1 0 1.06-1.06l-1.06 1.06ZM9 14.5A5.5 5.5 0 0 1 3.5 9H2a7 7 0 0 0 7 7v-1.5ZM3.5 9A5.5 5.5 0 0 1 9 3.5V2a7 7 0 0 0-7 7h1.5ZM9 3.5A5.5 5.5 0 0 1 14.5 9H16a7 7 0 0 0-7-7v1.5Zm3.89 10.45 3.83 3.83 1.06-1.06-3.83-3.83-1.06 1.06ZM14.5 9a5.48 5.48 0 0 1-1.61 3.89l1.06 1.06A6.98 6.98 0 0 0 16 9h-1.5Zm-1.61 3.89A5.48 5.48 0 0 1 9 14.5V16a6.98 6.98 0 0 0 4.95-2.05l-1.06-1.06Z"
+              ></path>
+            </svg>
+            <input
+              type="text"
+              class="search-input input"
+              value="Bielsko-Biała"
+              placeholder="Szukaj..."
+            />
+          </div>
+        </div>
+      </div>
+      <div class="gap-y-2 grid">
+        <div class="gap-x-14 flex-row">
+          <p class="regular-normal">Godziny otwarcia</p>
+          <p class="regular-normal">Wyczyść</p>
+        </div>
+        <div class="flex-row">
+          <div>
+            <input type="time" class="input" #openHourFilterFrom />
+          </div>
+          <div class="self-center p-3">
+            <p>-</p>
+          </div>
+          <div>
+            <input type="time" class="input" #openHourFilterFrom />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="justify-between flex-row">
+      <div class="flex-row gap-x-2 hashtag">
+        <p class="p-small-semi-bold">Bielsko-Biała</p>
+        <svg
+          class="remove self-center"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+      <div class="self-end">
+        <p>Znaleziono 385 obiektów</p>
+      </div>
     </div>
   </div>
+
   <div>
     <div *ngFor="let item of displayedItems">
       <hr class="border-black" />

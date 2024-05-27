@@ -1,6 +1,11 @@
 .background {
-  background: var(--Primary, #c7b299);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: var(--background-dark, #3f3f3f);
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+}
+
+p,
+h1 {
+  color: var(--Background);
 }
 
 button {
@@ -13,4 +18,14 @@ button {
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+
+#blob1 {
+  position: absolute;
+  margin-left: 23em;
+}
+#blob2 {
+  position: absolute;
+  right: 0;
+  margin-top: -40vh;
 }

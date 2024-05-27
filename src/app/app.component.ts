@@ -18,6 +18,7 @@ import { AddPlaceComponent } from './features/main/add-place/add-place.component
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { TrustedByComponent } from './features/main/trusted-by/trusted-by.component';
 import { MainComponent } from './features/main/main.component';
+import { AgmCoreModule } from '@agm/core';
 
 @Component({
   selector: 'app-root',
@@ -42,6 +43,9 @@ import { MainComponent } from './features/main/main.component';
     RouterLink,
     RouterModule,
     RouterLinkActive,
+    AgmCoreModule.forRoot({
+      apiKey: ''
+    })
   ],
 })
 export class AppComponent {

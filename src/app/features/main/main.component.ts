@@ -7,6 +7,8 @@ import { RecomendationsComponent } from './recomendations/recomendations.compone
 import { DiscoverComponent } from './discover/discover.component';
 import { AddPlaceComponent } from './add-place/add-place.component';
 import { TrustedByComponent } from './trusted-by/trusted-by.component';
+import { ContactComponent } from './contact/contact.component';
+import { PlaceListComponent } from './place-list/place-list.component';
 
 @Component({
   selector: 'app-main',
@@ -23,6 +25,8 @@ import { TrustedByComponent } from './trusted-by/trusted-by.component';
     DiscoverComponent,
     AddPlaceComponent,
     TrustedByComponent,
+    ContactComponent,
+    PlaceListComponent,
   ],
 })
 export class MainComponent {}

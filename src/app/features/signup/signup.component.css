@@ -1,3 +1,12 @@
 .input {
   border-radius: 4px;
 }
+.input:focus-visible {
+  outline: none; /* Usuwa domyślny outline, aby zastosować własny styl */
+  border: 2px solid #a9957d; /* Niebieskie obramowanie */
+  box-shadow: 0 0 0 2px #c7b29980; /* Subtelny niebieski cień dookoła */
+}
+
+.error {
+  color: #a9957d;
+}

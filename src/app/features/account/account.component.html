@@ -1,4 +1,4 @@
-<div class="container py-28">
+<div class="container py-28" *ngIf="userRole === 'user'">
   <p class="regular-semi-bold mb-4">Odkryć</p>
   <h1>Zarządzaj swoimi ulubionymi</h1>
   <p class="medium-normal my-6">
@@ -78,7 +78,7 @@
     <button (click)="loadMoreItems()">Więcej</button>
   </div>
 </div>
-
+<app-upload></app-upload>
 <account-faq></account-faq>
 
 <div class="container py-28 gap-x-20 flex-row col-2 items-center">

@@ -1,43 +1,311 @@
-<div class="container mx-auto h-screen gap-y-20 justify-center grid">
-  <div class="flex-1 justify-center">
-    <img class="w-full" src="./../assets/details-main-placeholder-img.png" />
+<div class="section">
+  <div class="background"></div>
+  <div class="relative pb-10 mb-10 flex-row mx-auto container items-center">
+    <div class="sm:w-1/3 text-white">
+      <p class="text-base">{{ hotel.location }}</p>
+      <div class="grid gap-y-4">
+        <h4 class="text-4xl">{{ hotel.name }}</h4>
+        <div class="flex flex-row">
+          <div class="line"></div>
+          <p class="text-xs">{{ hotel.description }}</p>
+        </div>
+        <div
+          class="actions flex-row items-center w-1/2 justify-end pr-5 py-2 gap-x-4 min-w-40 max-w-48"
+        >
+          <button class="px-4 py-1.5 text-xs">Kontakt</button>
+          <span class="icon-alternative-color">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="hashtags text-xs flex flex-wrap gap-2">
+          <span>Sauna mokra</span>
+          <span>Sauna Infrared</span>
+          <span>Parking</span>
+          <span>Parking</span>
+          <span>Sauna Infrared</span>
+          <span>Sauna Infrared</span>
+          <span>Sauna Infrared</span>
+        </div>
+      </div>
+    </div>
+    <div class="sm:w-2/3 mx-auto mt-8 flex">
+      <div class="w-2/3">
+        <img class="w-full aspect-square object-cover" src="assets/spa-1.jpg" />
+      </div>
+      <div class="w-1/5 flex flex-col justify-between ml-8">
+        <img class="aspect-square object-cover" src="assets/spa-1.jpg" />
+        <img class="aspect-square object-cover" src="assets/spa-1.jpg" />
+        <img class="aspect-square object-cover" src="assets/spa-1.jpg" />
+      </div>
+    </div>
   </div>
-  <div class="gap-y-6 grid pb-20 text-center">
-    <h1>Raj relaksu</h1>
-    <p class="medium-normal">
-      Odkryj ostateczne doświadczenie w saunie w spokojnym i luksusowym
-      otoczeniu.
+  <div class="relative mx-auto w-2/3 text-white gap-y-4 grid mb-10">
+    <p class="text-2xl font-bold">Sauna Infrared</p>
+    <p class="text-sm">
+      Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id
+      scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit
+      elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque
+      amet nulla purus habitasse.Morbi sed imperdiet in ipsum, adipiscing elit
+      dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit
+      sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed.
+      Nisl at scelerisque amet nulla purus habitasse.Morbi sed imperdiet in
+      ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies
+      ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque
+      tristique consequat quam sed. Nisl at scelerisque amet nulla purus
+      habitasse.Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus
+      id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit
+      elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque
+      amet nulla purus habitasse.Morbi sed imperdiet in ipsum, adipiscing elit
+      dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit
+      sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed.
+      Nisl at scelerisque amet nulla purus habitasse.Morbi sed imperdiet in
+      ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies
+      ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque
+      tristique consequat quam sed. Nisl at scelerisque amet nulla purus
+      habitasse.Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus
+      id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit
+      elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque
+      amet nulla
     </p>
-    <div class="flex-row gap-x-2 justify-center">
-      <p class="p-small-semi-bold hashtag self-center">Tag one</p>
-      <p class="p-small-semi-bold hashtag self-center">Tag two</p>
-      <p class="p-small-semi-bold hashtag self-center">Tag three</p>
+  </div>
+  <div class="relative mx-auto w-2/3 text-white gap-y-4 grid mb-10">
+    <p class="text-2xl font-bold">Sauna Infrared</p>
+    <p class="text-sm">
+      Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id
+      scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit
+      elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque
+      amet nulla purus habitasse.Morbi sed imperdiet in ipsum, adipiscing elit
+      dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit
+      sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed.
+      Nisl at scelerisque amet nulla purus habitasse.Morbi sed imperdiet in
+      ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies
+      ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque
+      tristique consequat quam sed. Nisl at scelerisque amet nulla purus
+      habitasse.Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus
+      id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit
+      elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque
+      amet nulla purus habitasse.Morbi sed imperdiet in ipsum, adipiscing elit
+      dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit
+      sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed.
+      Nisl at scelerisque amet nulla purus habitasse.Morbi sed imperdiet in
+      ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies
+      ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque
+      tristique consequat quam sed. Nisl at scelerisque amet nulla purus
+      habitasse.Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus
+      id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit
+      elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque
+      amet nulla
+    </p>
+  </div>
+  <div
+    class="relative mx-auto w-2/3 text-white my-32 justify-center flex-col items-center flex map"
+  >
+    <iframe
+      class="relative aspect-square"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2575.3895824958718!2d18.98237937645537!3d49.79754307147494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716a042bff166d7%3A0x9fce390ca213773e!2sPapuga%20Park%20Hotel%20SPA%20%26%20Wellness%20Marrakesz!5e0!3m2!1spl!2spl!4v1716808146033!5m2!1spl!2spl"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <div class="flex-row">
+      <div>test</div>
+      <div>test</div>
+      <div>test</div>
+    </div>
+    <agm-map
+      [latitude]="latitude"
+      [longitude]="longitude"
+      [zoom]="zoom"
+      [styles]="styles"
+    >
+      <agm-marker
+        *ngFor="let location of locations"
+        [latitude]="location.lat"
+        [longitude]="location.lng"
+        [label]="location.label"
+      >
+      </agm-marker>
+    </agm-map>
+  </div>
+
+  <!-- <div class="container py-28">
+  <div class="py-6">
+    <h3>Luksusowy Hotel Spa</h3>
+    <p class="regular-normal">Lokalizacja: Zakopane, Polska - Pokaż na mapie</p>
+  </div>
+  <div class="flex-row">
+    <div class="w-1/3">
+      <div>
+        <h3>Luksusowy Hotel Spa</h3>
+
+        <div class="flex-row gap-x-2">
+          <svg
+            class="location-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="{1.5}"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+            />
+          </svg>
+          <p class="regular-normal">
+            Zakopane, Polska -
+            <a
+              class="medium-bold"
+              href="https://www.google.pl/maps/place/Nowotarska+10b,+34-500+Zakopane/@49.2987166,19.94813,18z/data=!4m15!1m8!3m7!1s0x4715f29294ef3939:0xdf8d87a1716ba6a0!2sZakopane!3b1!8m2!3d49.299181!4d19.949562!16zL20vMGM2ZDc!3m5!1s0x4715f29ac2898293:0x8c86dc186fc0c763!8m2!3d49.2986867!4d19.9494386!16s%2Fg%2F11cs8jzl1x?entry=ttu"
+              target="_blank"
+              >Pokaz na mapie</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="flex-row justify-between p-10">
+        <div>
+          <h6 class="text-center">Sauny</h6>
+          <p class="status">Sucha</p>
+          <p class="status">Mokra</p>
+          <p class="status">Parowa</p>
+          <p class="status">Infrared</p>
+        </div>
+        <div class="gap-y-6 grid">
+          <div class="text-center">
+            <h6>Dzisiaj otwarte</h6>
+            <p>14:00 - 22:00</p>
+          </div>
+          <div class="text-center">
+            <h6>Ceny</h6>
+            <p>od 60zł/h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pr-10">
+        <p class="regular-normal">
+          Nadchodzące wydarzenia:
+          <a
+            class="medium-bold"
+            href="https://www.google.pl/maps/place/Nowotarska+10b,+34-500+Zakopane/@49.2987166,19.94813,18z/data=!4m15!1m8!3m7!1s0x4715f29294ef3939:0xdf8d87a1716ba6a0!2sZakopane!3b1!8m2!3d49.299181!4d19.949562!16zL20vMGM2ZDc!3m5!1s0x4715f29ac2898293:0x8c86dc186fc0c763!8m2!3d49.2986867!4d19.9494386!16s%2Fg%2F11cs8jzl1x?entry=ttu"
+            target="_blank"
+            >Święto Saun - 18:00, Piątek (2.05)
+          </a>
+        </p>
+      </div>
+
+      <div class="flex-row gap-x-4 pt-10">
+        <button-full [text]="'Kontakt'"></button-full>
+        <button-transparent [text]="'Rezerwacja'"></button-transparent>
+      </div>
+    </div>
+    <div class="rounded-lg space-y-6 w-2/3">
+      <div class="grid grid-cols-12 gap-4">
+        <div class="max-h-[28rem] col-span-4 gap-4 grid">
+          <div class="overflow-hidden rounded-lg col-span-4 max-h-[14rem]">
+            <img
+              class="h-full w-full object-cover"
+              src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+              alt=""
+            />
+          </div>
+          <div
+            class="overflow-hidden rounded-lg col-span-4 max-h-[14rem] h-full w-full"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-lg col-span-8 max-h-[28rem]">
+          <img
+            class="h-full w-full object-cover"
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1399&q=80"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg col-span-3 max-h-[10rem]">
+          <img
+            class="h-full w-full object-cover"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg col-span-3 max-h-[10rem]">
+          <img
+            class="h-full w-full object-cover"
+            src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg col-span-3 max-h-[10rem]">
+          <img
+            class="h-full w-full object-cover"
+            src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt=""
+          />
+        </div>
+        <div
+          class="relative overflow-hidden rounded-lg col-span-3 max-h-[10rem]"
+        >
+          <div
+            class="text-white text-xl absolute inset-0 bg-slate-900/80 flex justify-center items-center"
+          >
+            + 23
+          </div>
+          <img
+            class="h-full w-full object-cover"
+            src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container mx-auto py-28">
-  <div class="flex-row gap-x-20">
-    <div class="w-1/2">
-      <h2>Odkryj ostateczną saunę</h2>
-      <p class="regular-normal">
-        Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id
-        scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit
-        elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque
-        amet nulla purus habitasse. Nunc sed faucibus bibendum feugiat sed
-        interdum. Ipsum egestas condimentum mi massa. In tincidunt pharetra
-        consectetur sed duis facilisis metus. Etiam egestas in nec sed et. Quis
-        lobortis at sit dictum eget nibh tortor commodo cursus. Odio felis
-        sagittis, morbi feugiat tortor vitae feugiat fusce aliquet. Nam
-        elementum urna nisi aliquet erat dolor enim. Ornare id morbi eget ipsum.
-        Aliquam senectus neque ut id eget consectetur dictum. Donec posuere
-        pharetra odio consequat scelerisque et, nunc tortor. Nulla adipiscing
-        erat a erat. Condimentum lorem posuere gravida enim posuere cursus diam.
-      </p>
-    </div>
-    <div class="w-1/2">
-      <img class="w-full" src="./../assets/sample.png" />
-    </div>
+<div class="container mx-auto py-12">
+  <div class="w-2/3 gap-y-6 grid">
+    <h2>Odkryj ostateczną saunę</h2>
+    <p class="regular-normal">
+      Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id
+      scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit
+      elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque
+      amet nulla purus habitasse. Nunc sed faucibus bibendum feugiat sed
+      interdum. Ipsum egestas condimentum mi massa. In tincidunt pharetra
+      consectetur sed duis facilisis metus. Etiam egestas in nec sed et. Quis
+      lobortis at sit dictum eget nibh tortor commodo cursus. Odio felis
+      sagittis, morbi feugiat tortor vitae feugiat fusce aliquet. Nam elementum
+      urna nisi aliquet erat dolor enim. Ornare id morbi eget ipsum. Aliquam
+      senectus neque ut id eget consectetur dictum. Donec posuere pharetra odio
+      consequat scelerisque et, nunc tortor. Nulla adipiscing erat a erat.
+      Condimentum lorem posuere gravida enim posuere cursus diam.
+    </p>
   </div>
 </div>
 
@@ -100,4 +368,5 @@
       Rejestrując się, zgadzasz się na nasze warunki.
     </p>
   </div>
+</div> -->
 </div>

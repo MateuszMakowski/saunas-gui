@@ -1,3 +1,12 @@
 .input {
   border-radius: 4px;
 }
+.input:focus-visible {
+  outline: none;
+  border: 2px solid var(--primary-200);
+  box-shadow: 0 0 0 2px #c7b29980;
+}
+
+.error {
+  color: var(--primary-200);
+}

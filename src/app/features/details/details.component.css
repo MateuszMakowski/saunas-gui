@@ -1,12 +1,97 @@
-.background-img {
+.section {
+  position: relative;
+  width: 100%; /* Dostosuj szerokość sekcji */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/background-picture.jpg"); /* Ścieżka do tła */
+  background-size: cover;
+  /* background-position: center; */
+  background-attachment: fixed; /* Sprawia, że tło jest statyczne */
+  filter: blur(50px);
+}
+
+img {
+  border-radius: 20px;
+  filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.25));
+}
+
+.line {
+  position: relative;
+  width: 1px; /* Ustaw szerokość linii */
+  background-color: #ffffff; /* Kolor tła linii, biały w tym przypadku */
+  margin-right: 20px; /* Odstęp od tekstu */
+}
+
+button {
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.actions {
+  /* border: ; */
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: 1px solid white;
+  border-radius: 0 50px 50px 0;
+  background: rgba(176, 165, 165, 0.19);
+  backdrop-filter: blur(2px);
+}
+
+.hashtags span {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background: rgba(176, 165, 165, 0.19);
+  backdrop-filter: blur(2px);
+}
+
+iframe {
+  border-radius: 30px;
+}
+
+/* .properties p {
+  border: 1px solid white;
+  border-radius: 50px;
+  background: rgba(176, 165, 165, 0.19);
+  backdrop-filter: blur(2px);
+} */
+
+/* .background-img {
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
     url("../../../assets/sample.png") lightgray 50% / cover no-repeat;
-  color: var(--Background, #f5efe7);
+  color: var(--Background);
   input {
     color: var(--Text, #4d4d4d);
   }
 }
+
+.location-icon {
+  width: 24px;
+}
+
+p.status::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  box-shadow: 0 0 5px green;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.background {
+  background: var(--Primary);
+} */

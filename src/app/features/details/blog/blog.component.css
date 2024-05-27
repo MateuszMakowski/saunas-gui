@@ -10,15 +10,15 @@
   padding: 12px;
   gap: 8px;
   border-radius: 50px;
-  border: 1px solid #a9957d;
+  border: 1px solid var(--primary-200);
 }
 
 .arrow-left:hover,
 .arrow-right:hover {
-  background: #c7b299;
+  background: var(--Primary);
 }
 
 .arrow-left:active,
 .arrow-right:active {
-  background: #a9957d;
+  background: var(--primary-200);
 }

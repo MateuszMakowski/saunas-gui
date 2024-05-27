@@ -2,12 +2,50 @@
   <div class="flex flex-row h-screen">
     <div class="col-1 flex-1 flex flex-col justify-center">
       <h1>Odkrywaj Sauny i<br />Ekskluzywne Oferty</h1>
+      <!-- <h1>Odkrywaj Sauny w twojej okolicy</h1> -->
+      <!-- <h2>Gdzie na sauny to:</h2> -->
       <p class="medium-normal">
+        <!-- Odkryj Najlepsze Sauny w Twojej Okolicy  -->
+        <!-- Twój przewodnik po najlepszych saunach w okolicy. -->
         Znajdź najlepsze sauny w pobliżu i skorzystaj z ekskluzywnych ofert.
       </p>
       <button-full [routerLink]="'/odkrywaj'" [text]="'Odkrywaj'"></button-full>
+      <img src="./../assets/waves.png" id="waves" />
     </div>
-    <div class="flex-1 overflow-hidden group">
+
+    <div class="flex-1 flex-row overflow-hidden group gap-x-4">
+      <img src="./../assets/spiral.png" id="spiral" />
+      <div class="scroll-container" #scrollContainer>
+        <div class="images-wrapper">
+          <div class="grid" style="transform: translateY(-150px)">
+            <img src="./../assets/1.jpg" class="w-full aspect-square" />
+            <img src="./../assets/2.jpg" class="w-full aspect-square" />
+            <img src="./../assets/3.jpg" class="w-full aspect-square" />
+          </div>
+          <div class="grid" style="transform: translateY(-150px)">
+            <img src="./../assets/1.jpg" class="w-full aspect-square" />
+            <img src="./../assets/2.jpg" class="w-full aspect-square" />
+            <img src="./../assets/3.jpg" class="w-full aspect-square" />
+          </div>
+        </div>
+      </div>
+      <div class="scroll-container" #scrollContainer2>
+        <div class="images-wrapper">
+          <div class="grid">
+            <img src="./../assets/5.jpg" class="w-full aspect-square" />
+            <img src="./../assets/4.jpg" class="w-full aspect-square" />
+            <img src="./../assets/6.jpg" class="w-full aspect-square" />
+          </div>
+          <div class="grid">
+            <img src="./../assets/5.jpg" class="w-full aspect-square" />
+            <img src="./../assets/4.jpg" class="w-full aspect-square" />
+            <img src="./../assets/6.jpg" class="w-full aspect-square" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="flex-1 overflow-hidden group gap-y-4 grid">
+      <img src="./../assets/spiral.png" id="spiral" />
       <div
         class="grid grid-cols-2 gap-4 animate-loop-scroll group-hover:paused"
       >
@@ -28,6 +66,15 @@
         <img class="w-full aspect-square" src="./../assets/5.jpg" />
         <img class="w-full aspect-square" src="./../assets/6.jpg" />
       </div>
-    </div>
+    </div> -->
+  </div>
+</div>
+
+<div class="section">
+  <div class="hotels-list">
+    <div class="hotel">Hotel 1</div>
+    <div class="hotel">Hotel 2</div>
+    <div class="hotel">Hotel 3</div>
+    <!-- Dodaj więcej hoteli zgodnie z potrzebą -->
   </div>
 </div>

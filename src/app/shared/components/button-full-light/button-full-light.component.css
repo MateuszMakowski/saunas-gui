@@ -1,0 +1,25 @@
+/* button {
+  display: flex;
+  width: fit-content;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--primary-200, #a9957d);
+  color: var(--Primary, #c7b299);
+  background: var(--Background, #f5efe7);
+} */
+
+/* button:hover {
+  background: var(--hover, #a07e55);
+}
+
+button:active {
+  background: var(--active, #71523d);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  border: none;
+} */
