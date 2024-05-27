@@ -128,20 +128,6 @@
       <div>test</div>
       <div>test</div>
     </div>
-    <agm-map
-      [latitude]="latitude"
-      [longitude]="longitude"
-      [zoom]="zoom"
-      [styles]="styles"
-    >
-      <agm-marker
-        *ngFor="let location of locations"
-        [latitude]="location.lat"
-        [longitude]="location.lng"
-        [label]="location.label"
-      >
-      </agm-marker>
-    </agm-map>
   </div>
 
   <!-- <div class="container py-28">
