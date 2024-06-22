@@ -15,6 +15,14 @@ module.exports = {
       center: true,
       padding: '1rem'
     },
+    extend: {
+      fontFamily: {
+        sans: ['Outfit', 'system-ui', '-apple-system', 'BlinkMacSystemFont',
+        'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans',
+        'Helvetica Neue', 'sans-serif'],
+        serif: ['Roboto', 'serif'],
+      },
+    }
   },
   plugins: [],
 }

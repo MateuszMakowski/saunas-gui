@@ -3,7 +3,8 @@
   <div class="relative pb-10 mb-10">
     <div
       *ngFor="let hotel of hotels.slice(0, visibleHotels)"
-      class="flex flex-col-reverse sm:flex-row gap-8 justify-center items-center px-4 md:px-20 lg:px-40 xl:px-60 mb-20"
+      class="flex flex-col-reverse sm:flex-row gap-8 justify-center items-center px-4 md:px-20 lg:px-40 xl:px-60 mb-20 hidden-item"
+      AnimateInView
     >
       <div class="sm:w-1/2 text-white">
         <p class="text-base">{{ hotel.location }}</p>

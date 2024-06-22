@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { InViewDirective } from '../../../directives/in-view.directive';
 
 @Component({
   selector: 'app-place-list',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, InViewDirective],
   templateUrl: './place-list.component.html',
   styleUrl: './place-list.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

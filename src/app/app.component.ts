@@ -43,9 +43,6 @@ import { AgmCoreModule } from '@agm/core';
     RouterLink,
     RouterModule,
     RouterLinkActive,
-    AgmCoreModule.forRoot({
-      apiKey: ''
-    })
   ],
 })
 export class AppComponent {

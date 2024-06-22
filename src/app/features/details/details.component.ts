@@ -1,5 +1,6 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import {
+  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   Inject,
@@ -13,6 +14,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ButtonFullComponent } from '../../shared/components/button-full/button-full.component';
 import { BlogComponent } from './blog/blog.component';
 import { RouterModule } from '@angular/router';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { InViewDirective } from '../../directives/in-view.directive';
 
 @Component({
   selector: 'app-details',
@@ -29,6 +32,8 @@ import { RouterModule } from '@angular/router';
     ButtonFullComponent,
     BlogComponent,
     RouterModule,
+    GoogleMapsModule,
+    InViewDirective,
   ],
 })
 export class DetailsComponent implements OnInit {
@@ -39,6 +44,7 @@ export class DetailsComponent implements OnInit {
       window.scrollTo(0, 0);
     }
   }
+
   hotel = {
     name: 'Luxury Hotel SPA*****',
     location: 'Zakopane, Polska',
@@ -47,85 +53,22 @@ export class DetailsComponent implements OnInit {
     amenities: ['Sauna Mokra', 'Sauna Infrared', 'Parking'],
     image: 'assets/spa-1.jpg',
   };
-  stars = Array(5);
 
-  latitude = 52.2297;
-  longitude = 21.0122;
-  zoom = 8;
-
-  styles = [
-    {
-      featureType: 'water',
-      elementType: 'geometry',
-      stylers: [{ color: '#e9e9e9' }, { lightness: 17 }],
-    },
-    {
-      featureType: 'landscape',
-      elementType: 'geometry',
-      stylers: [{ color: '#f5f5f5' }, { lightness: 20 }],
-    },
-    {
-      featureType: 'road.highway',
-      elementType: 'geometry.fill',
-      stylers: [{ color: '#ffffff' }, { lightness: 17 }],
-    },
-    {
-      featureType: 'road.highway',
-      elementType: 'geometry.stroke',
-      stylers: [{ color: '#ffffff' }, { lightness: 29 }, { weight: 0.2 }],
-    },
-    {
-      featureType: 'road.arterial',
-      elementType: 'geometry',
-      stylers: [{ color: '#ffffff' }, { lightness: 18 }],
-    },
-    {
-      featureType: 'road.local',
-      elementType: 'geometry',
-      stylers: [{ color: '#ffffff' }, { lightness: 16 }],
-    },
-    {
-      featureType: 'poi',
-      elementType: 'geometry',
-      stylers: [{ color: '#f5f5f5' }, { lightness: 21 }],
-    },
-    {
-      featureType: 'poi.park',
-      elementType: 'geometry',
-      stylers: [{ color: '#dedede' }, { lightness: 21 }],
-    },
-    {
-      elementType: 'labels.text.stroke',
-      stylers: [{ visibility: 'on' }, { color: '#ffffff' }, { lightness: 16 }],
-    },
-    {
-      elementType: 'labels.text.fill',
-      stylers: [{ saturation: 36 }, { color: '#333333' }, { lightness: 40 }],
-    },
-    {
-      elementType: 'labels.icon',
-      stylers: [{ visibility: 'off' }],
-    },
-    {
-      featureType: 'transit',
-      elementType: 'geometry',
-      stylers: [{ color: '#f2f2f2' }, { lightness: 19 }],
-    },
-    {
-      featureType: 'administrative',
-      elementType: 'geometry.fill',
-      stylers: [{ color: '#fefefe' }, { lightness: 20 }],
-    },
-    {
-      featureType: 'administrative',
-      elementType: 'geometry.stroke',
-      stylers: [{ color: '#fefefe' }, { lightness: 17 }, { weight: 1.2 }],
-    },
+  hours = [
+    { day: 'Poniedziałek', open: '09:00', close: '17:00' },
+    { day: 'Wtorek', open: '09:00', close: '17:00' },
+    { day: 'Środa', open: '09:00', close: '17:00' },
+    { day: 'Czwartek', open: '09:00', close: '17:00' },
+    { day: 'Piątek', open: '09:00', close: '17:00' },
+    { day: 'Sobota', open: null, close: null },
+    { day: 'Niedziela', open: null, close: null },
   ];
 
-  locations = [
-    { lat: 52.2297, lng: 21.0122, label: 'Warszawa' },
-    { lat: 50.0647, lng: 19.945, label: 'Kraków' },
-    // Dodaj więcej lokalizacji według potrzeby
+  prices = [
+    { service: 'Usługa 1', price: '100 zł' },
+    { service: 'Usługa 2', price: '150 zł' },
+    { service: 'Usługa 3', price: '200 zł' },
+    { service: 'Usługa 4', price: '250 zł' },
+    { service: 'Usługa 5', price: '300 zł' },
   ];
 }
